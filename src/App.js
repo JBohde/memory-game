@@ -36,7 +36,7 @@ class App extends Component {
         allOfThem.forEach(element => {
           element.attributes.ispicked.value= "false";
         });
-      this.setState({message: "You guessed wrong! Game over.", count: 0})
+      this.setState({message: "You guessed wrong!", count: 0})
       return;
     }
   };
