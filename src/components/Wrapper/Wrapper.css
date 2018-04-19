@@ -18,3 +18,8 @@
   padding: 10px;
   position: relative;
 }
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+}
