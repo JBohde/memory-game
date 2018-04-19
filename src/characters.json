@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Cow",
+    "image": "https://vignette.wikia.nocookie.net/cowandchicken/images/e/e2/Cow_300-1-.gif/revision/latest/scale-to-width-down/200?cb=20110331122902"
+  },
+  {
+    "id": 2,
+    "name": "Ren",
+    "image": "https://vignette3.wikia.nocookie.net/renandstimpy/images/a/ae/Comic_Ren.png/revision/latest?cb=20130323210114"
+  },
+  {
+    "id": 3,
+    "name": "Stimpy",
+    "image": "https://vignette.wikia.nocookie.net/nickelodeon/images/2/28/Stimpy_J_Cat.png/revision/latest?cb=20150409074715"
+  },
+  {
+    "id": 4,
+    "name": "Daria",
+    "image": "https://vignette.wikia.nocookie.net/fictionalcharacters/images/c/cc/Daria.png/revision/latest?cb=20131028223718"
+  },
+  {
+    "id": 5,
+    "name": "The Brain",
+    "image": "https://i.kinja-img.com/gawker-media/image/upload/s--RWVXqMqZ--/ijogpvmtgijecl8nd7i4.png"
+  },
+  {
+    "id": 6,
+    "name": "Pinky",
+    "image": "https://vignette.wikia.nocookie.net/pinkyandthebrain/images/b/b4/Pinky7.gif/revision/latest/scale-to-width-down/169?cb=20141127231223"
+  },
+  {
+    "id": 7,
+    "name": "Darkwing Duck",
+    "image": "https://vignette.wikia.nocookie.net/disneyinfinityfanfiction/images/d/de/Darkwing_duck.png/revision/latest?cb=20151128132750"
+  },
+  {
+    "id": 8,
+    "name": "Baloo",
+    "image": "https://vignette.wikia.nocookie.net/poohadventures/images/3/37/Talespin_baloo.gif/revision/latest?cb=20140913143752"
+  },
+  {
+    "id": 9,
+    "name": "Launchpad McQuack",
+    "image": "https://vignette.wikia.nocookie.net/disney/images/9/9b/Croppedimage318436-jetmcquackintera.png/revision/latest?cb=20140724152301"
+  },
+  {
+    "id": 10,
+    "name": "Inspector Gadget",
+    "image": "https://vignette.wikia.nocookie.net/inspectorgadget/images/b/be/Inspector_Gadget_Thinking.png/revision/latest?cb=20140311001122"
+  },
+  {
+    "id": 11,
+    "name": "Bananaman",
+    "image": "https://static1.squarespace.com/static/59cb51ca2278e76492900c82/5a1e9a73f9619afa6ae4f1fa/5a1e9abaec212d9bd399b701/1511955217669/Bananaman.png?format=1000w"
+  },
+  {
+    "id": 12,
+    "name": "Beavis and Butthead",
+    "image": "http://www.stickpng.com/assets/images/584fd3566a5ae41a83ddee96.png"
+  }
+]

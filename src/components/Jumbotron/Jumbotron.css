@@ -1,0 +1,19 @@
+.jumbotron {
+    background-image: url("http://www.designbliss.com/wp-content/uploads/2008/11/funky_round_squares_shutterstock_17841847-converted-500x500.jpg");
+    /* background-color: rgb(41, 41, 180); */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.banner {
+    width: 50%;
+    margin: 50px auto;
+    background-color:  rgb(45, 2, 85);
+    opacity: 0.8;
+    align-content: center;
+    padding: 50px;
+}
