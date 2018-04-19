@@ -7,14 +7,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    width: 100%;
+    width: auto;
+    overflow: hidden;
 }
 
 .banner {
-    /* width: 50%; */
     margin: 125px auto;
-    /* background-color:  rgb(45, 2, 85);
-    opacity: 0.8; */
     align-content: center;
     padding: 50px;
 }

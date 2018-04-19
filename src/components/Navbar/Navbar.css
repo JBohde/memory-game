@@ -8,7 +8,12 @@
   position: fixed;
   top: 0;
   overflow: hidden;
+  clear: both;
 }
+/* 
+.navbar:after {
+  clear: both;
+} */
 
 /* 
 .nav-item {
