@@ -18,20 +18,26 @@ class App extends Component {
 
   // handleIncrement increases this.state.count by 1
   handleIncrement = (event) => {
-    // console.log(event.target);
+    console.log(event.target);
     let target= event.target.id;
     console.log(target);
     let isPicked = event.target.getAttribute("ispicked");
     console.log(isPicked);
+    let className = event.target.getAttribute("class");
+    console.log(className);
 
     if (isPicked==="false") {
       document.getElementById(target).setAttribute("ispicked", "true");
       this.setState({message: "You guessed correct!", count: this.state.count + 1});
-      if (this.state.count >= this.state.topscore) {
-        this.setState({topscore: this.state.count})
-      }
+      if (this.state.count >= this.state.topscore) {this.setState({topscore: this.state.count + 1})}
     } else {
-      this.setState({message: "You guessed wrong! Game over."})
+      var allOfThem = document.querySelectorAll(".character");
+        // console.log(allOfThem);
+        allOfThem.forEach(element => {
+          element.attributes.ispicked.value= "false";
+        });
+      this.setState({message: "You guessed wrong! Game over.", count: 0})
+      return;
     }
   };
 
@@ -48,7 +54,7 @@ class App extends Component {
       />
     ));
     return (
-      <div className="body">
+      <div className="container-fluid">
       <Navbar message={this.state.message} counter={this.state.count} topscore={this.state.topscore}/>
       <Jumbotron />
       <Wrapper>

@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   padding-top: 50px;
   background: #ECEFF1;
   height: 100%;
@@ -8,4 +8,13 @@
   justify-content: space-around;
   align-content: flex-start;
   overflow: auto;
+  margin-left: 50px;
+} */
+
+.shake {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
 }
