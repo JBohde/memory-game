@@ -19,6 +19,11 @@ class App extends Component {
 
   // handleIncrement increases this.state.count by 1
   handleIncrement = (event) => {
+
+  // shakeIt = () => {
+  //   var element = document.getElementById("myBox");
+  //   element.classList.toggle("shake");
+  // }
     console.log(event.target);
     let target= event.target.id;
     console.log(target);
@@ -38,11 +43,11 @@ class App extends Component {
           element.attributes.ispicked.value= "false";
         });
       this.setState({message: "You guessed wrong!", count: 0});
-      // var box = document.querySelectorAll(".box");
-      // box.setAttrbute("class", "shake");
+      // shakeIt();
       return;
     }
   };
+
 
   // Map over this.state.characters and render a CharacterCard component for each character object
   render() {
