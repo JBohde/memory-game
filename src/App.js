@@ -37,7 +37,9 @@ class App extends Component {
         allOfThem.forEach(element => {
           element.attributes.ispicked.value= "false";
         });
-      this.setState({message: "You guessed wrong!", count: 0})
+      this.setState({message: "You guessed wrong!", count: 0});
+      // var box = document.querySelectorAll(".box");
+      // box.setAttrbute("class", "shake");
       return;
     }
   };

@@ -143,7 +143,6 @@
     padding: 5px;
     transition: all .2s ease-in-out;
     float:left;
-    z-index: -1;
   }
   
   .card > .img-container {
