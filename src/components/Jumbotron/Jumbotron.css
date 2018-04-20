@@ -1,12 +1,12 @@
 .jumbotron {
-    background-image: url("https://cdn.vectorstock.com/i/1000x1000/44/84/abstract-geometric-triangle-seamless-3d-texture-vector-7914484.jpg");
+    background-image: url("http://cdn.desktopwallpaper4.me/wallpapers/abstract/1366x768/1/805-blue-and-white-bubbles-1366x768-abstract-wallpaper.jpg");
     /* background-color: rgb(41, 41, 180); */
     color: white;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 525px;
     width: auto;
     overflow: hidden;
 }

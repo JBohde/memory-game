@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Randomizer from "react-randomizer";
+import characters from "./characters.json";
 import CharacterCard from "./components/CharacterCard";
-import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
-import characters from "./characters.json";
+import Wrapper from "./components/Wrapper";
+import Footer from "./components/Footer";
 import "./App.css";
 
 class App extends Component {
@@ -54,12 +55,13 @@ class App extends Component {
       />
     ));
     return (
-      <div className="container-fluid">
+      <div className="app">
       <Navbar message={this.state.message} counter={this.state.count} topscore={this.state.topscore}/>
       <Jumbotron />
       <Wrapper>
           {Randomizer.randomizeArray(charMap)}
       </Wrapper>
+      <Footer />
       </div>
     );
   }

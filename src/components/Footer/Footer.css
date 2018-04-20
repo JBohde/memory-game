@@ -1,0 +1,15 @@
+footer {
+    background-color: rgb(52, 52, 58);
+    height: 60px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#copyright {
+    padding-top: 15px;
+    font-size: 18px;
+}

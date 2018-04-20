@@ -1,11 +1,11 @@
 .navbar {
-  background: rgb(64, 112, 74);
+  background: rgb(52, 52, 58);
   box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
   color: white;
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
-  padding: 25px;
+  padding: 15px;
   position: fixed;
   top: 0;
   overflow: hidden;
