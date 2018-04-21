@@ -143,6 +143,7 @@
     padding: 5px;
     transition: all .2s ease-in-out;
     float:left;
+    /* z-index: auto; */
   }
   
   .card > .img-container {
@@ -150,6 +151,7 @@
     overflow: hidden;
     text-align: center;
     background:#015ca2;
+    
   }
   .card > .img-container > img {
     width: 100%;
