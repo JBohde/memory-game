@@ -18,25 +18,33 @@ class App extends Component {
   };
 
   handleIncrement = (event) => {
-    let container = document.querySelector("#myBox");;
-    let target= event.target.id;
-    let isPicked = event.target.getAttribute("ispicked");
+    const container = document.querySelector("#myBox");;
+    const target= event.target.id;
+    const isPicked = event.target.getAttribute("ispicked");
+    const allOfThem = document.querySelectorAll(".character");
     container.classList.remove("shake");
     if (isPicked==="false") {
       document.getElementById(target).setAttribute("ispicked", "true");
       this.setState({message: "You guessed correct!", count: this.state.count + 1});
-      if (this.state.count >= this.state.topscore) {this.setState({topscore: this.state.count + 1})}
-    } else {
+      if (this.state.count >= this.state.topscore) {
+        this.setState({topscore: this.state.count + 1})
+        if (this.state.count >= 11 ) {
+          this.setState({message: "YOU WIN!!!", count: 0});
+          allOfThem.forEach(element => {
+            element.attributes.ispicked.value= "false";
+          });
+          return;
+        }
+      }
+    } else if (isPicked==="true") {
       container.classList.toggle("shake");
-      const allOfThem = document.querySelectorAll(".character");
-        // console.log(allOfThem);
         allOfThem.forEach(element => {
           element.attributes.ispicked.value= "false";
         });
       this.setState({message: "You guessed wrong!", count: 0});
-      
       return;
-    }
+      }
+
   };
 
 
