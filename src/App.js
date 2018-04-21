@@ -17,33 +17,24 @@ class App extends Component {
     message: "Click an image to begin!"
   };
 
-  // handleIncrement increases this.state.count by 1
   handleIncrement = (event) => {
-
-  // shakeIt = () => {
-  //   var element = document.getElementById("myBox");
-  //   element.classList.toggle("shake");
-  // }
-    console.log(event.target);
+    let container = document.querySelector("#myBox");;
     let target= event.target.id;
-    console.log(target);
     let isPicked = event.target.getAttribute("ispicked");
-    console.log(isPicked);
-    let className = event.target.getAttribute("class");
-    console.log(className);
-
+    container.classList.remove("shake");
     if (isPicked==="false") {
       document.getElementById(target).setAttribute("ispicked", "true");
       this.setState({message: "You guessed correct!", count: this.state.count + 1});
       if (this.state.count >= this.state.topscore) {this.setState({topscore: this.state.count + 1})}
     } else {
-      var allOfThem = document.querySelectorAll(".character");
+      container.classList.toggle("shake");
+      const allOfThem = document.querySelectorAll(".character");
         // console.log(allOfThem);
         allOfThem.forEach(element => {
           element.attributes.ispicked.value= "false";
         });
       this.setState({message: "You guessed wrong!", count: 0});
-      // shakeIt();
+      
       return;
     }
   };

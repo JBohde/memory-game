@@ -124,7 +124,7 @@
   0%, 100% {
     transform: translate(0, 0) rotate(0); } }
 
-.shake:hover,
+.shake,
 .shake-trigger:hover .shake, .shake.shake-freeze, .shake.shake-constant {
   animation-name: shake;
   animation-duration: 100ms;
