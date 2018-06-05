@@ -1,16 +1,3 @@
-/* .wrapper {
-  padding-top: 50px;
-  background: #ECEFF1;
-  height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  padding: 20px;
-  justify-content: space-around;
-  align-content: flex-start;
-  overflow: auto;
-  margin-left: 50px;
-} */
-
 .shake {
   width: auto;
   height: auto;
@@ -19,8 +6,3 @@
   position: relative;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}

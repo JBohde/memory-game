@@ -44,9 +44,7 @@ class App extends Component {
       this.setState({message: "You guessed wrong!", count: 0});
       return;
       }
-
   };
-
 
   // Map over this.state.characters and render a CharacterCard component for each character object
   render() {

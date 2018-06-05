@@ -1,12 +1,11 @@
-html, 
-body, 
-#root {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
+/* body,
+#root {     
+  position: relative;
+  height: auto;
+  min-height: 100% !important;
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   font-family: sans-serif;
-}
+} */
