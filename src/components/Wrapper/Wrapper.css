@@ -1,9 +1,27 @@
-.shake {
-  width: auto;
-  height: auto;
+.shake,
+#myBox {
+  width: 55%;
   margin: 0 auto;
   padding: 10px;
   position: relative;
+}
+
+@media(max-width:768px) {
+  .shake,
+  #myBox {
+    width: 76%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+@media(max-width:568px) {
+  .shake,
+  #myBox {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 }
 
 .container {
