@@ -1,6 +1,6 @@
 
 
-/*! * * * * * * * * * * * * * * * * * * * *\  
+/*! * * * * * * * * * * * * * * * * * * * *\
   CSShake :: shake
   v1.5.0
   CSS classes to move your DOM
@@ -133,17 +133,15 @@
 
   .card {
     background: #fff;
-    border-radius: 2px;
+    border-radius: .25rem;
     height: 175px;
     width: 175px;
-    margin:5px;
-    margin: 7px 15px 7px 15px;
+    margin: 7px 15px;
     position: relative;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 3px 6px #999;
     text-align: left;
     padding: 5px;
     transition: all .2s ease-in-out;
-    float:left;
   }
 
   @media(max-width:768px) {
@@ -160,19 +158,16 @@
       margin:5px;
     }
   }
-  
+
   .card > .img-container {
-    height: 100%;
+    background: #ed5723;
     overflow: hidden;
-    text-align: center;
-    background:#015ca2;
-    
   }
   .card > .img-container > img {
     width: 100%;
     margin-top: 15px;
   }
-  
+
   .card:hover {
     transform: scale(1.1);
     box-shadow: 0 3px 3px rgb(126, 123, 123), 0 3px 6px rgb(126, 123, 123);

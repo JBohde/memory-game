@@ -1,11 +1,8 @@
-/* body,
-#root {     
-  position: relative;
-  height: auto;
-  min-height: 100% !important;
-} */
+body {
+  background-color: #f6f6da;
+}
 
-/* * {
-  box-sizing: border-box;
-  font-family: sans-serif;
-} */
+.row {
+  justify-content: center;
+  margin: 2rem 0;
+}

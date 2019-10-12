@@ -1,18 +1,21 @@
 .jumbotron {
-    background-image: url("http://cdn.desktopwallpaper4.me/wallpapers/abstract/1366x768/1/805-blue-and-white-bubbles-1366x768-abstract-wallpaper.jpg");
-    /* background-color: rgb(41, 41, 180); */
+    background-image: url("./memory.jpg");
     color: white;
-    text-shadow: 2px 2px 4px #000000;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 525px;
     width: auto;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 .banner {
     margin: 125px auto;
     align-content: center;
     padding: 50px;
+}
+
+.title {
+  font-weight: bold;
 }

@@ -1,14 +1,11 @@
 .footer {
-    background-color: rgb(52, 52, 58);
+    background-color: #589588;
     height: 60px;
     width: 100%;
     color: white;
     text-align: center;
     bottom: 0;
     clear: both;
-    /* position: fixed; */
-    /* overflow: auto; */
-    /* z-index: auto; */
 }
 
 #copyright {
