@@ -7,7 +7,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-randomizer": "^1.0.6",
-    "react-scripts": "1.1.4",
+    "react-scripts": "^3.2.0",
     "react-shuffle": "^2.1.0"
   },
   "scripts": {
@@ -15,5 +15,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
