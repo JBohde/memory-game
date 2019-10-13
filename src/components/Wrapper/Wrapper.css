@@ -1,33 +1,8 @@
-/* .shake,
-#myBox {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-}
-
-@media(max-width:768px) {
-  .shake,
-  #myBox {
-    margin: 0 auto;
-    padding: 10px;
-  }
-}
-
-@media(max-width:568px) {
-  .shake,
-  #myBox {
-    margin: 0 auto;
-    padding: 10px;
-  }
-}
-
-.wrapper {
-  background-color: #f3f8f2
-}
-*/
-
 .wrapper {
   margin: 0 auto;
+}
+
+.container.shake {
+  display: flex;
 }
 
