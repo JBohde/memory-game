@@ -1,0 +1,76 @@
+[
+  {
+    "id": 0,
+    "name": "Cow",
+    "image": "./cow.gif",
+    "ispicked": false
+  },
+  {
+    "id": 1,
+    "name": "Ren",
+    "image": "./ren.png",
+    "ispicked": false
+  },
+  {
+    "id": 2,
+    "name": "Stimpy",
+    "image": "./stimpy.png",
+    "ispicked": false
+  },
+  {
+    "id": 3,
+    "name": "Daria",
+    "image": "./daria.png",
+    "ispicked": false
+  },
+  {
+    "id": 4,
+    "name": "The Brain",
+    "image": "./brain.png",
+    "ispicked": false
+  },
+  {
+    "id": 5,
+    "name": "Pinky",
+    "image": "./pinky.gif",
+    "ispicked": false
+  },
+  {
+    "id": 6,
+    "name": "Darkwing Duck",
+    "image": "./darkwing.png",
+    "ispicked": false
+  },
+  {
+    "id": 7,
+    "name": "Baloo",
+    "image": "./baloo.gif",
+    "ispicked": false
+
+  },
+  {
+    "id": 8,
+    "name": "Launchpad McQuack",
+    "image": "./launchpad.png",
+    "ispicked": false
+
+  },
+  {
+    "id": 9,
+    "name": "Inspector Gadget",
+    "image": "./inspector_gadget.png",
+    "ispicked": false
+  },
+  {
+    "id": 10,
+    "name": "Bananaman",
+    "image": "./bananaman.png",
+    "ispicked": false
+  },
+  {
+    "id": 12,
+    "name": "Beavis and Butthead",
+    "image": "beavis_and_butthead.png",
+    "ispicked": false
+  }
+]

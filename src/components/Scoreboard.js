@@ -5,7 +5,7 @@ class Scorer extends React.Component {
     count: 0,
   };
 
-  handleIncrement = () => {
+  handleChoice = () => {
     this.setState({ count: this.state.count + 1 });
   };
 
@@ -21,7 +21,7 @@ class Scorer extends React.Component {
         </div>
         <div className='card-body'>
           <p className='card-text'>Click Count: {this.state.count}</p>
-          <button className='btn btn-primary' onClick={this.handleIncrement}>
+          <button className='btn btn-primary' onClick={this.handleChoice}>
             Increment
           </button>{' '}
           <button className='btn btn-danger' onClick={this.handleDecrement}>

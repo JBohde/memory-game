@@ -6,7 +6,7 @@ const Navbar = props => (
     <div className='nav-item'>{props.message}</div>
     <div className='nav-item'>
       <p className='card-text'>
-        Score: {props.counter} | Top Score: {props.topscore}
+        Score: {props.counter} | Top Score: {props.topScore}
       </p>
     </div>
   </nav>

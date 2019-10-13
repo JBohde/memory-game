@@ -9,8 +9,8 @@ const CharacterCard = props => (
         alt={props.name}
         src={props.image}
         id={props.id}
-        ispicked='false'
-        onClick={props.handleIncrement}
+        ispicked={props.isPicked}
+        onClick={props.handleChoice}
       />
     </div>
   </div>
