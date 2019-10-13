@@ -48,7 +48,7 @@ class Game extends Component {
       return this.setState({
         shake: true,
         isPicked: false,
-        message: 'You guessed wrong. Game Over.',
+        message: 'Sorry, Play Again!',
         count: 0,
       });
     }
