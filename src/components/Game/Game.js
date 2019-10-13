@@ -7,6 +7,7 @@ import Jumbotron from '../Jumbotron';
 import Footer from '../Footer';
 import CharacterCard from '../CharacterCard';
 import characters from './characters.json';
+import './Game.css';
 
 class Game extends Component {
   constructor() {
@@ -65,18 +66,20 @@ class Game extends Component {
       />
     ));
     return (
-      <>
+      <div className='game'>
         <Navbar
           message={this.state.message}
           counter={this.state.count}
           topScore={this.state.topScore}
         />
+        <div className='game-body'>
         <Jumbotron />
         <Wrapper shake={this.state.shake}>
           {Randomizer.randomizeArray(charMap)}
         </Wrapper>
+        </div>
         <Footer />
-      </>
+      </div>
     );
   }
 }
