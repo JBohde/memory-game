@@ -2,7 +2,7 @@ import React from 'react';
 import './CharacterCard.css';
 
 const CharacterCard = props => (
-  <div className='col-sm-3 card'>
+  <div className='col-sm-4 card'>
     <div className='img-container'>
       <img
         className='img-responsive character'

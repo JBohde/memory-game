@@ -134,9 +134,9 @@
   .card {
     background: #fff;
     border-radius: .25rem;
-    height: 175px;
-    width: 175px;
-    margin: 7px 15px;
+    max-height: 175px;
+    max-width: 175px;
+    margin: 5px;
     position: relative;
     box-shadow: 0 3px 6px #999;
     text-align: left;
