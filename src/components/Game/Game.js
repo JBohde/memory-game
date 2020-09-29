@@ -7,55 +7,54 @@ import Jumbotron from '../Jumbotron';
 import Footer from '../Footer';
 import CharacterCard from '../CharacterCard';
 import characters from './characters.json';
+
 import './Game.css';
 
 class Game extends Component {
   constructor() {
     super();
     this.state = {
-      count: 0,
+      currentScore: 0,
       topScore: 0,
-      newcharacters: characters,
-      message: 'Click an image to begin!',
+      characters,
+      message: 'Test Your Memory!',
       shake: false,
-      isPicked: false,
+      pickedCards: [],
     };
   }
 
   handleChoice = event => {
-    const target = event.target;
-    const isPicked = event.target.getAttribute('ispicked');
-    const { count, topScore } = this.state;
-    this.setState({ shake: false });
-    if (isPicked === 'false') {
-      target.setAttribute('ispicked', 'true');
-      this.setState({
-        message: 'You guessed correct!',
-        count: count + 1,
-      });
-      if (count >= topScore) {
-        this.setState({ topScore: count + 1 });
-        if (count === 10) {
-          this.setState({
-            isPicked: false,
-            message: 'You Win!',
-            count: 0,
-          });
-        }
-      }
-    } else if (isPicked === 'true') {
-      target.setAttribute('ispicked', 'false');
+    const { target: { id } } = event;
+    const selectedCard = parseInt(id);
+    const { pickedCards, currentScore, topScore } = this.state;
+    if (pickedCards.includes(selectedCard)) {
       return this.setState({
         shake: true,
-        isPicked: false,
         message: 'Sorry, Play Again!',
-        count: 0,
+        currentScore: 0,
+        pickedCards: [],
       });
     }
+    if (currentScore >= topScore) {
+      this.setState({ topScore: currentScore + 1 });
+      if (currentScore >= 11) {
+        return this.setState({
+          message: 'You Win!',
+          currentScore: 0,
+          pickedCards: [],
+        });
+      }
+    }
+    this.setState({
+      shake: false,
+      message: 'You guessed correct!',
+      currentScore: currentScore + 1,
+      pickedCards: [...this.state.pickedCards, selectedCard],
+    });
   };
 
-  render() {
-    const charMap = this.state.newcharacters.map(character => (
+  renderCharacterCards = () =>
+    this.state.characters.map(character => (
       <CharacterCard
         handleChoice={this.handleChoice.bind(this)}
         id={character.id}
@@ -65,18 +64,20 @@ class Game extends Component {
         isPicked={character.ispicked.toString()}
       />
     ));
+
+  render() {
     return (
       <div className='game'>
         <Navbar
           message={this.state.message}
-          counter={this.state.count}
+          currentScore={this.state.currentScore}
           topScore={this.state.topScore}
         />
         <div className='game-body'>
-        <Jumbotron />
-        <Wrapper shake={this.state.shake}>
-          {Randomizer.randomizeArray(charMap)}
-        </Wrapper>
+          <Jumbotron />
+          <Wrapper shake={this.state.shake}>
+            {Randomizer.randomizeArray(this.renderCharacterCards())}
+          </Wrapper>
         </div>
         <Footer />
       </div>

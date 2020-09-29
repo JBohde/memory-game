@@ -1,21 +1,22 @@
 .jumbotron {
-    background-image: url("./memory.jpg");
-    color: white;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 525px;
-    width: auto;
-    overflow: hidden;
-    margin-bottom: 0;
+  background-image: url('./memory.jpg');
+  color: white;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 525px;
+  width: auto;
+  overflow: hidden;
+  margin-bottom: 0;
 }
 
 .banner {
-    margin: 125px auto;
-    align-content: center;
-    padding: 50px;
-}
-
-.title {
+  margin: 8rem auto 0;
+  align-content: center;
+  padding: 50px;
+  width: 51vh;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.65);
+  color: #1e7378;
   font-weight: bold;
 }
